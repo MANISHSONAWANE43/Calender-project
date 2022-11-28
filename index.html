@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            padding-left: 20px;
+            margin: 20px;
+            display: flex;
+            
+        }
+ table, td, th {
+  border: 1px solid black;
+}
+
+        .container{
+            display: flex;
+            gap:20px;
+            margin-bottom: 20px;
+            display: flex;
+            padding: auto;
+        }
+        .main{
+            border: 1px solid black;
+            width: 25%;
+            margin-top: 200px;
+            margin-left: 400px;
+        }
+        .contain1{
+            padding: 2px;
+            margin: 2px;
+            display: inline;
+            
+        }
+        .action{
+            padding: 5px;
+            margin: 5px;
+        }
+        select{
+            width: 150px;
+            margin-left: 2px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="contain1">
+                <select name="date" id="1st">
+                    <option value="select">Enter your month</option>
+                    <option value="name">January </option>
+                    <option value="name1">February</option>
+                    <option value="name2">March </option>
+                    <option value="name3">April </option>
+                    <option value="name4">May </option>
+                    <option value="name5">June </option>
+                    <option value="name6">July </ption>
+                    <option value="name7">August </option>
+                    <option value="name8">September</option>
+                    <option value="name9">October</option>
+                    <option value="name10">Novemberr</option>
+                    <option value="name11">December</option>
+                </select>
+            </div>
+            <div class="contain1">
+                <select name="date" id="1st" >
+                    <option value="name">Enter Year </option>
+                    <option value="name">2022</option>
+                    <option value="name1">2021</option>
+                    <option value="name2">2020</option>
+                    <option value="name3">2019</option>
+                    <option value="name4">2018</option>
+                    <option value="name5">2017</option>
+                    <option value="name6">2016</ption>
+                    <option value="name7">2015</option>
+                    <option value="name8">2014</option>
+                    <option value="name9">2013</option>
+                    <option value="name10">2012</option>
+                    <option value="name11">2011</option>
+                    <option value="name11">2010</option>
+                </select>
+            </div>
+        </div>
+        
+        <table>
+            <tr>
+                <th>SUN</th>  
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WEB</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                </tr>
+                
+                <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="1">1</td>
+                <td id="2">2</td>
+                </tr>
+                
+                <tr>
+                <td id="3">3</td>
+                <td id="4">4</td>
+                <td id="5">5</td>
+                <td id="7">6</td>
+                <td id="7">7</td>
+                <td id="8">8</td>
+                <td id="9">9</td>
+                </tr>
+                
+                <tr>
+                <td id="10">10</td>
+                <td id="11">11</td>
+                <td id="12">12</td>
+                <td id="13">13</td>
+                <td id="14">14</td>
+                <td id="15">15</td>
+                <td id="16">16</td>
+                </tr>
+                
+                <tr>
+                <td id="17">17</td>
+                <td id="18">18</td>
+                <td id="19">19</td>
+                <td id="20">20</td>
+                <td id="21">21</td>
+                <td id="22">22</td>
+                <td id="23">23</td>
+                </tr>
+                
+                <tr>
+                <td id="24">24</td>
+                <td id="25">25</td>
+                <td id="26">26</td>
+                <td id="27">27</td>
+                <td id="28">28</td>
+                <td id="29">29</td>
+                <td id="30">30</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                
+                </table>
+    
+                <div class="action">
+                    <input type="text" name="" id="input" placeholder="Enter Any Date">
+                    <button class="btn" id="enter">Enter</button>
+                </div>
+        </table>
+    </div>
+  
+    <script>
+        var inp=document.getElementById('input')
+        document.getElementById('enter').addEventListener('click',()=>{
+         document.getElementById(`${inp.value}`).style.backgroundColor='green'
+        });
+        inp.addEventListener('keydown',(e)=>{
+          
+          if(e.key==='Backspace')
+         document.getElementById(`${inp.value}`).style.backgroundColor='white'
+        })
+         </script>
+     
+    
+</body>
+</html>
